@@ -1,4 +1,6 @@
 var argButtonName, buttonTest;
+var playerScore = 0;
+var cpuScore = 0;
 
 /**
  * Describe this function...
@@ -7,8 +9,8 @@ function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 
-  var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
-
+    var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
+    
 /**
  * Describe this function...
  */
@@ -33,17 +35,22 @@ function displayResult(argPlayerMove, argComputerMove) {
   console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
   if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
     printMessage('Wygrywasz!');
+    playerScore++;
   } else if (argPlayerMove == 'nożyce' && argComputerMove == 'papier') {
     printMessage('Wygrywasz!');
+    playerScore++;
   } else if (argPlayerMove == 'kamień' && argComputerMove == 'nożyce') {
     printMessage('Wygrywasz!');
+    playerScore++;
   } else if (argPlayerMove === argComputerMove) {
     printMessage('Remis');
   }
   else {
     printMessage('Przegrywasz :(');
+    cpuScore++;
   }
   printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
+  printMessage(`Wynik to: TY: ${playerScore} - ${cpuScore} : Komputer`);
 }
 /* playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
 console.log('wybór ruchu gracza to: ' + playerInput);
