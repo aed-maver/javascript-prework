@@ -8,7 +8,7 @@ if (randomNumber == '1') {
 } else {
     computerMove = 'nożyce';
 }
-printMessage('Mój ruch: ' + computerMove);
+printMessage('Ruch komputera: ' + computerMove);
 
 var playerMove, playerInput;
 playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
@@ -21,6 +21,6 @@ if (playerInput == '1') {
   playerMove = 'nożyce';
 } else {
     playerMove = 'kamień';
-    printMessage('Błędny wybór: ' + playerMove);
+    printMessage('Błędny wybór !!!');
 }
 printMessage('Twój ruch: ' + playerMove);
