@@ -1,6 +1,6 @@
-var argButtonName, buttonTest;
-var playerScore = 0;
-var cpuScore = 0;
+let argButtonName, buttonTest;
+let playerScore = 0;
+let cpuScore = 0;
 
 /**
  * Describe this function...
