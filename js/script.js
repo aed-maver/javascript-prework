@@ -9,7 +9,7 @@ function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 
-    var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
+    let argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
     
 /**
  * Describe this function...
@@ -64,6 +64,7 @@ computerMove = getMoveName(randomNumber);
 console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
 }
+
 buttonTest = document.getElementById('button-test');
 buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
 buttonRock = document.getElementById('button-rock');
