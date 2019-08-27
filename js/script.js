@@ -1,4 +1,4 @@
-let argButtonName, buttonTest;
+let argButtonName;//, buttonTest;
 let playerScore = 0;
 let cpuScore = 0;
 
@@ -65,11 +65,11 @@ console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
 }
 
-buttonTest = document.getElementById('button-test');
+const buttonTest = document.getElementById('button-test');
 buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
-buttonRock = document.getElementById('button-rock');
+const buttonRock = document.getElementById('button-rock');
 buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
-buttonPaper = document.getElementById('button-paper');
+const buttonPaper = document.getElementById('button-paper');
 buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
-buttonScissors = document.getElementById('button-scissors');
+const buttonScissors = document.getElementById('button-scissors');
 buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
